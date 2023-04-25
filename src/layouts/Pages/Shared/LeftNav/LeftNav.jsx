@@ -1,7 +1,17 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const LeftNav = () => {
+
+    const [categories, setCategories] = useState([]);
+
+    useEffect(()=>{
+        fetch('http://localhost:5000/categories')
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
+    },[])
+
     return (
         <div>
             <h1>this is left</h1>
