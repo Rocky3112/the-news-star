@@ -20,6 +20,9 @@ const RightNav = () => {
     </ListGroup>
       </div>
       <QZone></QZone>
+      <div>
+        <h1>rocket</h1>
+      </div>
     </div>
   );
 };
